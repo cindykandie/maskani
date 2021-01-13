@@ -1,0 +1,430 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif,Arial, Helvetica, sans-serif;
+
+}
+.home-page{
+    display: block;
+}
+body{
+    margin: 0;
+    padding: 0;
+    margin-bottom: -160px;
+    overflow: hidden auto;
+    background-color: rgb(241, 238, 238);
+    line-height: 1.2;
+    word-spacing: 5px;
+   
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(182, 37, 182);
+    padding: 20px 10px;
+    color: white;
+    box-shadow:0 2px 3px rgb(59, 53, 53);
+    margin: 0;
+    margin-bottom: 50px ;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;;
+     
+    .logo{
+        display:flex;
+        align-items: center;
+        padding: 10px 20px;
+
+        img{
+            width: 20px;
+            padding: 0 20px;
+        }
+    }
+    .log-in{
+        display:flex;
+        align-items: center;
+        img{
+            width:15px;
+            padding: 0 5px;
+        }
+    }
+
+    .book{
+        display:flex;
+        align-items: center;
+        img{
+            width: 20px;
+            padding: 0 5px;
+        }
+    }
+
+
+
+    a{
+      color: white;
+      text-decoration: none;
+    }
+}
+nav{
+    position: absolute;
+    background-color: rgb(177, 53, 177);
+    padding: 1.6rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow:0 2px 3px rgb(59, 53, 53),
+    -0 -2px 3px rgb(59, 53, 53);
+    top: 15vh;
+    left:10px;
+    max-width: 300px;
+    width: 50vw;
+    opacity:0;
+    transform: scale(2);
+    pointer-events: none;
+
+    ul{
+        list-style-type: none;
+        img{
+            width:1.2rem;
+        }
+        li{
+            padding: 0.8rem 1rem;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            a:hover{
+                color: white;
+
+            }
+        }
+    }
+
+}
+div.get-started{
+    .destkop-signup{
+        display: none;
+    }
+.search-bar{
+    margin: 10px 20px;
+    padding: 10px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0 2px 4px rgb(51, 43, 43);
+    font-weight: bold;
+    background-color: rgb(220, 172, 230);
+    border-radius: 5px;
+    margin-bottom: 50px;
+
+    img{
+        display:flex;
+        align-items: center;
+        width: 20px;
+        padding: 10px 10px;
+        margin-right: 12px;
+        border: 2px solid rgb(199, 111, 240);
+        border-radius: 5px;
+    }
+    img:hover{
+        background-color: rgb(146, 199, 146);
+        filter: invert(1);
+        border: 2px solid black;
+
+
+    }
+
+
+
+
+    input{
+        outline: none;
+        border: none;
+        width: 90%;
+        margin: auto 3px;
+        font-size: 80%;
+        font-weight: bold;
+        border-radius: 4px;
+        padding:10px;
+        background-color: rgb(222, 165, 233);
+        color: black;
+
+
+
+    }
+    i{
+        font-size: 70%;
+    }
+}
+section.options{
+    display: flex;
+    margin-bottom: 25px ;
+    justify-content: center;
+    align-content: center;
+    button{
+        background-color: inherit;
+        outline: none;
+        border: none;
+        a{
+            color: rgb(7, 7, 7);
+            text-decoration: none;
+            font-weight: 550;
+
+
+        }
+        a.active{
+            color: rgb(72, 12, 88);
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+}
+}
+section.apartment-images{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+
+    div.apartment-image-card{
+        display: flex;
+        flex-direction: column;
+        box-shadow:2px 2px 5px rgb(53, 48, 48);
+        margin: 30px 5px;
+        color: rgb(87, 33, 92);
+
+        img{
+            width: 100%;
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        p{
+            margin: 5px 10px;
+        }
+        i{  
+            padding: 2px 5px 0px;
+            margin-right: 3px;
+            border-radius: 5px;
+        }
+    }
+    }
+}
+section.see-more{
+   
+    padding: 10px 30px;
+    text-align: right;
+
+
+    button{
+        background-image: linear-gradient(45deg, rgb(81, 35, 119),rgb(182, 5, 116));
+        padding: 12px 14px;
+        border-radius: 6px;
+        margin-right: 16px;
+        button:hover{
+            background-image: linear-gradient(45deg,rgb(182, 5, 116),rgb(81, 35, 119));
+        }
+        a{
+            text-decoration: none;
+            color: rgb(250, 245, 245);
+            font-weight: 600;
+            
+        }
+
+    }
+}
+footer{
+    box-sizing: border-box;
+    background-color: rgb(182, 37, 182);
+    margin:0 0;
+    height: 160px;
+    text-align: center;
+    font-size:10px;
+    padding: 30px 20px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    .socials *{
+        img{
+            width: 20px;
+            padding: 10px 20px;
+        }
+        img:hover{
+            filter:invert(1);
+        }
+    }
+}
+}
+
+@media (min-width: 700px){
+    body{
+        font-size: 18px;
+        header{
+           
+            padding: 25px 15px;
+            box-shadow:0 4px 4px rgb(59, 53, 53);
+            font-size: 16px;
+
+           
+        }
+        div.get-started{
+        section.search-bar{
+            padding: 15px 3px;
+            box-shadow:0 3px 4px rgb(51, 43, 43);
+            width: 70%;
+            margin:50px auto;
+            input{
+                font-size: 80%;
+
+            }
+            i{
+                font-size: 80%;
+            }
+        }
+    }
+        section.options{
+            font-size:18px;
+
+        }
+        section.apartment-images{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px 10px;
+            justify-content: center;
+            align-items: center;
+            margin: auto auto;
+        
+            div.apartment-image-card{
+                box-shadow:2px 3px 4px rgb(51, 43, 43);
+                width: 41%; 
+                margin: 10px 10px;
+                div{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+            }
+            }
+        }
+        footer{
+            font-size:13px;          
+        }
+    }
+}
+.login-body{
+    display: none;
+}
+@media (min-width: 1150px){
+   body{
+       font-size: 2rem;
+       header{
+           .sign-up{
+               display: none;
+           }
+       }
+       div.get-started{
+        background-image: url(../assets/images/litpic.jpg);
+        background-repeat: no-repeat;
+        background-size: 120vw 80vh;
+        background-position: center;
+        height: 80vh;
+        margin: 6rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .destkop-signup{
+            background-color: #f94eff;
+            padding: 0.8rem 2.6rem;
+            font-size: 1.5rem;
+            border-radius: 0.8rem;
+            outline: none;
+            border: none;
+            display: flex;
+            a{
+                color: black;
+                text-decoration: none;
+            }
+            a:hover{
+                color: white;
+                text-decoration: underline;
+            }
+
+        }
+        .destkop-signup:hover{
+            background-color: rgb(104, 104, 214);
+            color: floralwhite;
+        }
+        .search-bar{
+            position: absolute;
+            top: 90vh;
+            left:50%;
+            transform: translate(-50%);
+            padding: 40px 25px;
+            font-size:18px;
+            box-shadow:2px 2px 5px rgb(51, 43, 43);
+
+
+           
+            
+        }        
+
+       
+
+       section.options{
+        display: flex;
+        margin: 20px 20px;
+        justify-content: space-around;
+        border-radius: 4px;
+        position: absolute;
+        top:10vh;
+        left: 45vw;
+        transform: translate(-45%);
+
+
+       
+        div.option-buttons{
+            padding: 30px 20px;
+            width: 90%;
+            margin: auto;
+            border-radius: 2px;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+
+        
+        button{
+            outline: none;
+            border: none;
+            border-radius: 4px;
+            a{
+                color: rgb(18, 16, 19);
+                text-decoration: none;
+                font-weight: 550;
+                font-size: 17px;
+    
+    
+            }
+            a.active{
+                color: rgb(111, 6, 143);
+                font-weight: 600;
+                font-size: 1.4rem;
+
+            }
+        }
+    
+    }
+}
+}
+       section.apartment-images{
+        margin: 150px auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 30px;
+        justify-content: center;
+        align-items: center;
+    
+        div.apartment-image-card{
+            margin: 30px auto;
+            width: 30%;
+        }
+    }
+   }
+}

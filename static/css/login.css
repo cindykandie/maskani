@@ -1,0 +1,221 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.login-body {
+  padding: 0 auto 30px;
+  width: 99vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.login-body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #992399;
+  padding: 20px 10px;
+  color: white;
+  -webkit-box-shadow: 0 2px 3px #3b3535;
+          box-shadow: 0 2px 3px #3b3535;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.login-body header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-body header .logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.login-body header .logo img {
+  width: 20px;
+  padding: 0 20px;
+}
+
+.login-body header .log-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-body header .log-in img {
+  width: 15px;
+  padding: 0 5px;
+}
+
+.login-body header .book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-body header .book img {
+  width: 20px;
+  padding: 0 5px;
+}
+
+.login-body header a {
+  color: white;
+  text-decoration: none;
+}
+
+.login-body nav {
+  position: absolute;
+  background-color: #b135b1;
+  padding: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  -webkit-box-shadow: 0 2px 3px #3b3535, 0 -2px 3px #3b3535;
+          box-shadow: 0 2px 3px #3b3535, 0 -2px 3px #3b3535;
+  top: 10vh;
+  left: 10px;
+  max-width: 300px;
+  width: 50vw;
+  opacity: 0;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  pointer-events: none;
+}
+
+.login-body nav ul {
+  list-style-type: none;
+}
+
+.login-body nav ul img {
+  width: 1.2rem;
+}
+
+.login-body nav ul li {
+  padding: 0.8rem 1rem;
+}
+
+.login-body nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.login-body nav ul li a:hover {
+  color: white;
+}
+
+.login-body .login-card {
+  border: 1px solid black;
+  -webkit-box-shadow: 2px 2px 2px #353434, -1px -2px 2px #4e4c4c;
+          box-shadow: 2px 2px 2px #353434, -1px -2px 2px #4e4c4c;
+  max-width: 90vw;
+  margin: auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 20px auto;
+}
+
+.login-body .login-card .logo {
+  margin: 20px auto;
+}
+
+.login-body .login-card .logo img {
+  width: 30vw;
+  max-width: 150px;
+  margin: auto auto;
+}
+
+.login-body .login-card input {
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+.login-body .login-card .login-btn {
+  background-image: linear-gradient(45deg, #512377, #b60574);
+  padding: 12px 14px;
+  border-radius: 6px;
+  margin-right: 16px;
+  color: white;
+}
+
+.login-body .login-card .login-btn:hover {
+  background-image: linear-gradient(45deg, #b60574, #512377);
+}
+
+.login-body .login-card p {
+  font-size: 130%;
+  color: #490449;
+  font-weight: 600;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.login-body .login-card .social-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-body .login-card .social-options img {
+  width: 30px;
+  margin: 10px 30px 20px;
+}
+
+.login-body .signup-card input {
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  background-color: lightgray;
+}
+
+.login-body .signup-card input:focus {
+  border: 1px solid #4d1355;
+  background-color: #e5cef5;
+}
+
+@media (min-width: 425px) {
+  body .login-card {
+    width: 400px;
+    margin: auto auto;
+  }
+}
+/*# sourceMappingURL=login.css.map */

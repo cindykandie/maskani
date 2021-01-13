@@ -1,0 +1,422 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  overflow: hidden auto;
+  font-size: 1rem;
+}
+
+body header {
+  background-color: #4f0299;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.9rem 1rem;
+  -webkit-box-shadow: 4px 0px 4px rgba(87, 78, 78, 0.2);
+          box-shadow: 4px 0px 4px rgba(87, 78, 78, 0.2);
+  margin-bottom: 0.9rem;
+}
+
+body header .nav-bar {
+  background-color: #4f0299;
+  position: absolute;
+  top: 3.5rem;
+  bottom: 2rem;
+  left: 0vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 3px;
+  width: auto;
+  max-width: 300px;
+  min-width: 200px;
+  font-weight: 300;
+  font-size: 75%;
+  line-height: 3;
+  padding: 1.5rem;
+  pointer-events: none;
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+  -webkit-transition: -webkit-transform ease-in 0.6s;
+  transition: -webkit-transform ease-in 0.6s;
+  transition: transform ease-in 0.6s;
+  transition: transform ease-in 0.6s, -webkit-transform ease-in 0.6s;
+}
+
+body header .nav-burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body header img {
+  width: 1.4rem;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+body header .desktop-display {
+  display: none;
+}
+
+body header h4 {
+  display: none;
+}
+
+body .action-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 0.6rem;
+}
+
+body .action-buttons button {
+  background-color: #4f0299;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  padding: 0.2rem 1.2rem;
+  border-radius: 5px;
+}
+
+body .stat-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.8rem 1.8rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+}
+
+body .stat-cards div {
+  -webkit-box-shadow: 2px 2px 1px rgba(87, 78, 78, 0.2), -2px -2px 1px rgba(87, 78, 78, 0.2);
+          box-shadow: 2px 2px 1px rgba(87, 78, 78, 0.2), -2px -2px 1px rgba(87, 78, 78, 0.2);
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin: 0.5rem 0.8rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+body .stat-cards div span {
+  padding: 0.6rem 1.5rem;
+  font-size: 1.6rem;
+  color: #f36;
+  font-weight: 600;
+}
+
+body .stat-cards div h4 {
+  padding: 1rem;
+}
+
+body .stat-cards .blank {
+  display: none;
+}
+
+body .stat-cards .desktop-message {
+  display: none;
+}
+
+body .desktop-buttons {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  body {
+    font-size: 1.2rem;
+  }
+  body .action-buttons {
+    font-size: 1.5rem;
+  }
+  body .stat-cards {
+    width: 65vw;
+    margin: auto;
+    padding: auto;
+  }
+  body .stat-cards div {
+    padding: 1rem 1rem;
+  }
+}
+
+@media (min-width: 700px) {
+  body {
+    font-size: 1.2rem;
+  }
+  body header .message {
+    display: none;
+  }
+  body .stat-cards {
+    margin: auto;
+    padding: auto;
+  }
+  body .stat-cards div {
+    padding: 1rem 1rem;
+    width: 30%;
+  }
+  body .stat-cards .desktop-message {
+    display: block;
+    color: #f36;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.2rem;
+  }
+  body .action-buttons {
+    display: none;
+  }
+  body header .message {
+    display: none;
+  }
+  body header div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body header .desktop-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body header h4 {
+    display: block;
+  }
+  body .stat-cards {
+    margin: auto;
+    padding: auto;
+  }
+  body .stat-cards div {
+    padding: 1rem 1rem;
+    width: 20%;
+  }
+  body .stat-cards .blank {
+    display: block;
+    height: inherit;
+    padding: 2rem 1rem;
+  }
+  body .stat-cards .desktop-message {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  body .desktop-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-color: #fff;
+    color: #828282;
+  }
+}
+
+body section.find-posts {
+  -webkit-box-shadow: 2px 2px 2px rgba(87, 78, 78, 0.2), -2px -2px 2px rgba(87, 78, 78, 0.2);
+          box-shadow: 2px 2px 2px rgba(87, 78, 78, 0.2), -2px -2px 2px rgba(87, 78, 78, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: auto;
+  min-width: 20vw;
+  padding: 0.5rem;
+  max-width: 290px;
+  margin: auto;
+  border-right: 2px solid #828282;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+body section.find-posts input {
+  outline: none;
+  border: none;
+}
+
+body section.find-posts img {
+  width: 1rem;
+  padding: 0 0.8rem;
+}
+
+body section.apartments-posted {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px 30px;
+  margin: 1.8rem auto;
+}
+
+body section.apartments-posted div.apartment {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  margin: 1.8rem auto;
+}
+
+body section.apartments-posted div.apartment img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+body section.apartments-posted div.apartment .apartment-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body section.apartments-posted div.apartment .apartment-details button {
+  padding: 0.7rem 1rem;
+  font-size: 1.2rem;
+  background-color: #4f0299;
+  color: #fff;
+  border-radius: 6px;
+}
+
+body .image-settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 90%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .image-settings .editor-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2rem;
+}
+
+body .image-settings .editor-buttons div button {
+  padding: 1px;
+  margin: auto 0.5rem;
+  background-color: none;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+body .image-settings .editor-buttons div button img {
+  widows: 1.2em;
+  height: 1.2rem;
+}
+
+body .image-settings img {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  height: 50vh;
+  margin: 2rem;
+}
+
+body .apartment-description {
+  padding: 2rem;
+}
+
+body .apartment-description label {
+  font-size: 80%;
+}
+
+body .save-button {
+  background-color: #4f0299;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  margin-top: 0.8rem;
+  margin: auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  body .image-settings {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .image-settings .editor-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .apartment-description {
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body .save-button {
+    padding: 0.6rem 1rem;
+  }
+}
+/*# sourceMappingURL=dashb.css.map */

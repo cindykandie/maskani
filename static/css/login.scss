@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.login-body{
+    padding: 0 auto 30px;
+    width: 99vw;
+   
+    
+    top: 0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(153, 35, 153);
+        padding: 20px 10px;
+        color: white;
+        box-shadow:0 2px 3px rgb(59, 53, 53);
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 12.5px;
+        font-weight: 600;
+         
+        .logo{
+            display:flex;
+            align-items: center;
+            a{
+                color: white;
+                text-decoration: none;
+
+            }
+            
+            img{
+                width: 20px;
+                padding: 0 20px;
+            }
+        }
+        .log-in{
+            display:flex;
+            align-items: center;
+            img{
+                width:15px;
+                padding: 0 5px;
+            }
+        }
+    
+        .book{
+            display:flex;
+            align-items: center;
+            img{
+                width: 20px;
+                padding: 0 5px;
+            }
+        }
+    
+    
+    
+        a{
+          color: white;
+          text-decoration: none;
+        }
+    }
+    nav{
+        position: absolute;
+        background-color: rgb(177, 53, 177);
+        padding: 1.8rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        box-shadow:0 2px 3px rgb(59, 53, 53),
+        -0 -2px 3px rgb(59, 53, 53);
+        top: 10vh;
+        left:10px;
+        max-width: 300px;
+        width: 50vw;
+        opacity:0;
+        transform: scale(2);
+        pointer-events: none;
+    
+        ul{
+            list-style-type: none;
+            img{
+                width:1.2rem;
+            }
+            li{
+                padding: 0.8rem 1rem;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                a:hover{
+                    color: white;
+    
+                }
+            }
+        }
+    
+    }
+    .login-card{
+        border: 1px solid black;
+        box-shadow: 2px 2px 2px rgb(53, 52, 52),
+        -1px -2px 2px rgb(78, 76, 76);
+        max-width: 90vw;
+        margin: auto auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
+        padding: 20px auto;
+        .logo{
+            margin: 20px auto;
+
+            img{
+                width: 30vw;
+                max-width: 150px;
+                margin: auto auto;
+            }
+        }
+        input{
+            padding: 20px;
+            margin: 10px auto;
+            border-radius: 8px;
+        }
+        .login-btn{
+            background-image: linear-gradient(45deg, rgb(81, 35, 119),rgb(182, 5, 116));
+            padding: 12px 14px;
+            border-radius: 6px;
+            margin-right: 16px;
+            color: white;
+            }
+            .login-btn:hover{
+                background-image: linear-gradient(45deg,rgb(182, 5, 116),rgb(81, 35, 119));
+            }
+        p{
+            font-size: 130%;
+            color: rgb(73, 4, 73);
+            font-weight: 600;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .social-options{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            img{
+                width: 30px;
+                margin: 10px 30px 20px;
+            }
+        }
+        
+    }
+    .signup-card{
+
+        input{
+            padding: 8px 20px;
+            border: none;
+            outline: none;
+            background-color: lightgray;
+        }
+        input:focus{
+            border: 1px solid rgb(77, 19, 85);
+            background-color: rgb(229, 206, 245);
+        }
+    }
+}
+@media (min-width:425px){
+    body{
+        .login-card{
+            width: 400px;
+            margin: auto auto;
+        }
+    }
+}

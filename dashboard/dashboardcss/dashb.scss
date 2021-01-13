@@ -1,0 +1,363 @@
+$blueColor: #4f0299;
+$fontColor: #828282;
+$whiteFontColor: #fff;
+
+$pinkFontColor: #f36;
+$boxShadowColor: rgba(87, 78, 78, 0.2);
+$mainFont: 'Times New Roman', Times, serif;
+$backgroundColor: #fff;
+
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family:$mainFont;
+    overflow: hidden auto;
+    font-size: 1rem;
+
+    header{
+        background-color: $blueColor;
+        display: flex;
+        color: $whiteFontColor;
+        justify-content: space-between;
+        align-items: center;
+        padding:0.9rem 1rem;
+        box-shadow: 4px 0px 4px $boxShadowColor;
+        margin-bottom: 0.9rem;
+        .nav-bar{
+            background-color: $blueColor;
+            position: absolute;
+            top: 3.5rem;
+            bottom: 2rem;
+            left: 0vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border-radius: 3px;
+            width: auto;
+            max-width: 300px;
+            min-width: 200px;
+            font-weight: 300;
+            font-size: 75%;
+            line-height: 3;
+            padding: 1.5rem;
+            pointer-events: none;
+            transform: translate(-100%);
+            transition: transform ease-in 0.6s;
+            
+        }
+        .nav-burger{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        img{
+            width: 1.4rem;
+            filter: invert(1);
+        }
+        .desktop-display{
+            display: none;
+        }
+        h4{
+            display: none;
+        }
+    }
+    .action-buttons{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 0.6rem;
+        button{
+            background-color: $blueColor;
+            color: $whiteFontColor;
+            font-family:$mainFont; 
+            padding: 0.2rem 1.2rem;
+            border-radius: 5px;
+
+
+        }
+    }
+
+    .stat-cards{
+        display:flex;
+        padding: 1.8rem 1.8rem;
+        flex-wrap: wrap;
+        margin: auto;
+
+        div{
+            box-shadow: 2px 2px 1px $boxShadowColor,-2px -2px 1px $boxShadowColor;
+            width: 100%;
+            padding: 0.6rem 0.8rem;
+            margin: 0.5rem 0.8rem;
+            text-align: center;
+            border-radius: 5px;
+            span{
+                padding: 0.6rem 1.5rem;
+                font-size: 1.6rem;
+                color: $pinkFontColor;
+                font-weight: 600;
+                
+            }
+            h4{
+                padding: 1rem;
+            }
+            
+        }
+        .blank{
+            display: none;
+        }
+        .desktop-message{
+            display: none;
+        }
+    }
+    .desktop-buttons{
+        display: none;
+    }
+}
+
+
+@media (min-width: 500px){
+body{
+    .action-buttons{
+        font-size: 1.5rem;
+
+    }
+    font-size: 1.2rem;
+    .stat-cards{
+        width: 65vw;
+        margin: auto;
+        padding: auto;
+        div{
+            padding: 1rem 1rem;
+        }
+    }
+}
+}
+@media (min-width: 700px){
+    body{
+        font-size: 1.2rem;
+        header{
+            .message{
+                display: none;
+            }
+        }
+        .stat-cards{
+            margin: auto;
+            padding: auto;
+            div{
+                padding: 1rem 1rem;
+                width: 30%;
+            }
+            .desktop-message{
+                display: block;
+                color: $pinkFontColor;
+            }
+        }
+    }
+    }
+    @media (min-width: 1024px){
+        body{
+            font-size: 1.2rem;
+            .action-buttons{
+                display: none;
+            }
+            header{
+                .message{
+                    display: none;
+                }
+                div{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .desktop-display{
+                    display: flex;
+                }
+                h4{
+                    display: block;
+                }
+
+            }
+            .stat-cards{
+                margin: auto;
+                padding: auto;
+                div{
+                    padding: 1rem 1rem;
+                    width: 20%;
+                }
+                .listed{
+                    
+                  
+                }
+                .blank{
+                    display: block;
+                    height: inherit;
+                    padding: 2rem 1rem;
+                }
+                .desktop-message{
+                    box-shadow: none;
+
+                }
+            }
+            .desktop-buttons{
+                display: flex;
+                justify-content: space-around;
+                background-color: $backgroundColor;
+                color: $fontColor;
+            }
+        }
+    }
+
+
+body{
+    section.find-posts{
+        box-shadow: 2px 2px 2px $boxShadowColor, -2px -2px 2px $boxShadowColor;
+        display:flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: auto;
+        min-width:20vw;
+        padding: 0.5rem;
+        max-width: 290px;
+        margin: auto;
+        border-right: 2px solid $fontColor;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        input{
+            outline: none;
+            border: none;
+        }
+        img{
+            width: 1rem;
+            padding: 0 0.8rem;
+        }
+    }
+    section.apartments-posted{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 30px;
+        margin: 1.8rem auto;
+
+        div.apartment{               
+             width: 100%;
+             max-width: 500px;
+             margin: auto;
+             margin: 1.8rem auto;
+
+
+            img{
+              width: 100%;
+              border-radius: 8px;
+
+            }
+            .apartment-details{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                button{
+                    padding: 0.7rem 1rem;
+                    font-size: 1.2rem;
+                    background-color: $blueColor;
+                    color: $whiteFontColor;
+                    border-radius: 6px;
+                }
+
+            }
+            
+        }
+    }
+
+}
+
+
+// EDIT.HTML
+body{
+
+    .image-settings{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 90%;
+        flex-direction: column;
+            .editor-buttons{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            align-items: left;
+            flex: 1;
+            padding: 2rem;
+            div{
+                button{
+                    padding: 1px;
+                    margin: auto 0.5rem;
+                    background-color: none;
+                    color: $whiteFontColor;
+                    border-radius: 5px;
+                    border: none;
+                    outline: none;
+                    
+                    img{
+                        widows: 1.2em;
+                        height: 1.2rem;
+                    }
+                }
+            }
+            }
+            img{
+                flex:2;
+                height: 50vh;
+                margin: 2rem;
+            }
+    }
+    .apartment-description{
+        padding: 2rem;
+        .main-details{
+
+        }
+        label{
+            font-size: 80%;
+        }
+
+    }
+    .save-button{
+        background-color: $blueColor;
+        color: $whiteFontColor;
+        padding: 0.6rem 1rem;
+        border-radius: 5px;
+        margin-top: 0.8rem;
+        margin: auto auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+    }
+}
+@media (min-width:700px){
+    body{
+       
+    .image-settings{
+        flex-direction: row;
+
+            .editor-buttons{
+            flex-direction: column;
+
+           
+            }
+            
+    }
+    .apartment-description{
+        padding: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        .main-details{
+
+        }
+        
+
+    }
+    .save-button{
+        padding: 0.6rem 1rem;
+    } 
+    }
+}
+// EDIT.HTML
